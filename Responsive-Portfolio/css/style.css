@@ -217,16 +217,20 @@ input[type=submit] {
 }
 @media only screen and (max-width: 980px) {
   body {
-      background-color: lightblue;
+      border: 8px solid black;
+      background: yellow;
   }
 }
 @media only screen and (max-width: 768px) {
   body {
-      background-color: lightblue;
+    border: 6px solid black;
+    background: blue;
+
   }
 }
 @media only screen and (max-width: 640px) {
   body {
-      background-color: lightblue;
+    border: 4px solid black;
+    background: green;
   }
 }
