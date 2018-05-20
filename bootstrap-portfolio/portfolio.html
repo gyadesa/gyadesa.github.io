@@ -1,0 +1,176 @@
+<!-- Demo Layout for Bootstrap (with cards) -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      * {
+        
+      }
+      .name-box {
+        background-color: #ffffff
+      }
+      .HR-1{
+          padding: 10px;
+          margin: 0px;
+      }
+      .AB-2{
+        color: #4aaaa5;
+        padding: 60px;
+        margin: 20px;
+      }
+      .BD-3 {
+        max-width: 960px;
+        background-color: #ffffff;
+      }
+      .FT-4 {
+            
+      }
+    </style>
+</head>
+
+<body>
+  <!-- NavBar (copied and pasted from WC3) -->
+  <!-- Static navbar -->
+  <div class="container-fluid main-bg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top HR-1">
+    <div class="container">
+      <a class="navbar-brand name-box" href="#">Gamachis Yadesa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio
+                <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Body goes in Container -->
+  <div class="container-fluid AB-2">
+    <div class="row">
+      <div class="col-lg-12">
+      <!-- The content in this div gets wrapped in a card -->
+        <div class="card">
+          <div class="card-body">
+                <h2>Portfolio</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="container text-center">
+      <h3>BAHAMAS</h3>
+      <p><em>We love it</em></p>
+      <p>Our best vacation ever website.</p>
+      <br>
+      <div class="row">
+          <div class="col-sm-6">
+              <p class="text-center"><strong>Gamme</strong></p><br>
+              <a href="#demo" data-toggle="collapse">
+                  <img src="images/gamme1.jpg" class="img-circle person" alt="Random Name">
+              </a>
+              <div id="demo" class="collapse">
+                  <p>Software Engineer</p>
+                  <p>Loves long walks on the beach</p>
+                  <p>Current Student at the UoM</p>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <p class="text-center"><strong>Mamme</strong></p><br>
+              <a href="#demo2" data-toggle="collapse">
+                  <img src="images/Mamme.jpg" class="img-circle person" alt="Random Name">
+              </a>
+              <div id="demo2" class="collapse">
+                  <p>Accountant</p>
+                  <p>Loves cooking</p>
+                  <p>Beautiful as always</p>
+              </div>
+          </div>
+      </div>
+      <div>
+          <br>
+      </div>
+      <div class="row">
+          <div class="col-sm-4">
+              <p class="text-center"><strong>Solan</strong></p><br>
+              <a href="#demo3" data-toggle="collapse">
+                  <img src="images/Solan.jpg" class="img-circle person" alt="Random Name">
+              </a>
+              <div id="demo3" class="collapse">
+                  <p>Student</p>
+                  <p>Loves Soccer and Maths</p>
+                  <p>Very active and skilled</p>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <p class="text-center"><strong>Bona</strong></p><br>
+              <a href="#demo4" data-toggle="collapse">
+                  <img src="images/Bona.jpg" class="img-circle person" alt="Random Name">
+              </a>
+              <div id="demo4" class="collapse">
+                  <p>Student</p>
+                  <p>Loves Soccer and Music</p>
+                  <p>Very active and loves cumputer games</p>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <p class="text-center"><strong>Yona</strong></p><br>
+              <a href="#demo5" data-toggle="collapse">
+                  <img src="images/Yona.jpg" class="img-circle person" alt="Random Name">
+              </a>
+              <div id="demo5" class="collapse">
+                  <p>Student</p>
+                  <p>Loves games</p>
+                  <p>Very funny and loveable</p>
+              </div>
+          </div>
+
+      </div>
+  
+  </div>
+
+  <div class="container-fluid FT-4">  
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- The content in this div gets wrapped in a card -->
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              <img class="" src="http://placehold.it/50x50" alt="">
+              <img class="" src="http://placehold.it/50x50" alt="">
+              <img class="" src="http://placehold.it/50x50" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
