@@ -142,6 +142,9 @@ h3, h2 {
   width: 274px;
   margin: 20px 0 25px;
   overflow: auto;
+  position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
 }
 
 .work:nth-child(even) {
@@ -170,7 +173,7 @@ h3, h2 {
 
 .auth-image {
   float: left;
-  width: 200px;
+  width: 250px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -233,4 +236,25 @@ input[type=submit] {
     border: 4px solid black;
     background: green;
   }
+  nav{
+    float: static;
+    width: 100%;
+  }
+  img {
+    width:none;
+  }
+  .auth-image {
+    float: none;
+  }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%   {top: 0px; background: red; width: 100px;}
+  100% {top: 200px; background: yellow; width: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0%   {top: 0px; background: red; width: 100px;}
+  100% {top: 200px; background: yellow; width: 300px;}
 }
