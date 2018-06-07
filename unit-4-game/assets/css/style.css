@@ -1,0 +1,32 @@
+/* general */
+* {
+    box-sizing: border-box;
+  }
+  body {
+      background-image: url("../images/blueBackGround.jpg");
+  }
+  #boxInstra {
+       font-size: 14px;
+       background-color: burlywood;
+  }
+  #boxComputer {
+    padding: 20px;
+    background-color: rgb(85, 177, 85);
+    color: blue;
+  }
+  #boxWins {
+    padding: 33px;
+    background-color: darkturquoise;
+    color: blue;
+  }
+  #boxScore {
+    padding: 33px;
+    background-color:rgb(27, 131, 126);
+  }
+  #boxLoss {
+    padding: 33px;
+    background-color:darkturquoise;
+    color: blue;
+  }
+ 
+  

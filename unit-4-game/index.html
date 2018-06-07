@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Checker</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Latest compiled and minified CSS (Bootstrap) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="text-center" span>Number Guesser</h1>
+        <h2 class="text-center">See if you can guess the number the computer is thinking of!</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-2">
+                    <h5 class="card-header text-center">Game Instructions</h5>
+                    <div class="card-body text-left" id="boxInstra">
+                        <p>
+                            You will be give a random number at the start of the game.
+                            <br>
+                            <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                            to your total score.
+                            <br> You win the game by matching your total score to random number, you lose the game if your total
+                            score goes above the ranom number.
+                            <br> The value of each crystal is hidden from you until you click on it.
+                            <br> Each time when the game starts, the game will change the values of each crystal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-2">
+                    <h5 class="card-header text-center">Computer Pick</h5>
+                    <div class="card-body text-center" id="boxComputer">
+                        <h2>
+                            <span id="displayRandomNumber"></span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mb-2">
+                            <h5 class="card-header text-center">Wins</h5>
+                            <div class="card-body text-center" id="boxWins">
+                                <h2>
+                                    <span id="numberofWins"></span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-2">
+                            <h5 class="card-header text-center">Your total Score</h5>
+                            <div class="card-body text-center" id="boxScore">
+                                <h2>
+                                    <span id="totalScore"></span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-2">
+                            <h5 class="card-header text-center">Losses</h5>
+                            <div class="card-body text-center" id="boxLoss">
+                                <h2>
+                                    <span id="numberofLosses"></span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-2">
+                    <h5 class="card-header text-center">Result</h5>
+                    <div class="card-body text-center" id="boxResult">
+                        <h1 id="result"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-2">
+                    <h5 class="card-header text-center">Your Pick</h5>
+                    <div class="card-body text-center">
+                        <img src="assets/images/blueDimend.jpg" class="crystalImg" id="crstlBlue" alt="Blue crystal" width="150" height="150" />
+                        <img src="assets/images/crystalBlueBall.jpg" class="crystalImg" id="crstlYellow" alt="Yellow crystal" width="150" height="150"/>
+                        <img src="assets/images/greenCrystal.jpg" class="crystalImg" id="crstlBlueDark" alt="Blue-dark crystal" width="150" height="150" />
+                        <img src="assets/images/crystal-ice-explosion.jpg" class="crystalImg" id="crstlRocks" alt="Rocks crystal" width="150" height="150" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
