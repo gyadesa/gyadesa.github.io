@@ -1,0 +1,37 @@
+/* general */
+* {
+    box-sizing: border-box;
+  }
+  .jumbotron {
+    background-color: yellow;
+    color: blue;
+  }
+  body {
+      background-image: url("../images/starsSky.jpg");
+  }
+  #boxbtnStart {
+    height: 50px;
+    background-color:blue;
+  }
+  img {
+    width: 320px;
+    height: 280px;
+  }
+  #boxQuestions {
+       font-size: 14px;
+       padding: 10px;
+       height: 320px;
+       background-color:whitesmoke;
+  }
+  #boxAnswer {
+    padding: 10px;
+    height: 320px;
+    text-align: center;
+    background-color:whitesmoke;
+  }
+ .btn start {
+   text-align: center;
+   padding: 14px 28px;
+ } 
+ 
+  
