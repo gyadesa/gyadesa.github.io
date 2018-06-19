@@ -1,0 +1,52 @@
+button, div, form, input {
+	margin: 3px;
+}
+
+img {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+label {
+    color: rgb(9, 179, 209);
+    font-size: 20px;
+}
+
+.btn-default {
+    color: blue;
+    font-size: medium;
+    font-weight: bold;
+}
+
+body {
+  background-image: url("../images/stadium-open.jpg ");
+  font-family: 'Bad Script', cursive;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.textHead {
+  margin: auto;
+  padding: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+} 
+
+.holder {
+    float: left;
+}
+#bioImage {
+  float: left;
+  height: 95px;
+  padding-top: 10px;
+  padding-left: -260px;
+}
+
+.jumbotron {
+  padding-top: 0px;
+  padding-left: -5px;
+  text-align: center;
+  height:110px;
+  background-color: lightgray;
+}
