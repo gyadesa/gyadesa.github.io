@@ -1,77 +1,162 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Hangman Game</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="assets/javascript/game.js"></script>
+    <title>RPS Game</title>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Creates the Overall Grid -->
+    <!--Jumbotron with title-->
+    <div class="jumbotron">
+        <h1 class="text-center" span>Rock Paper Scissor</h1>
+        <h2 class="text-center">See if you can beat your oponent or computer!</h2>
+        <br></br>
+        <h4 class="text-center">Enter your name below to start the game</h4>
+
+    </div>
     <div class="container">
-        <!--Start of main container section>-->
-        <div class="first-header">
-            <!--Start of header section>-->
-            <!-- First Row -->
-            <div class="row">
-                <div class="col-md-3">
-                    <!-- As a heading -->
-                    <img src="assets/images/bio-image.jpg" class="bioImage" alt="Bio Header Image" />
+        <form>
+            <div class="form-group">
+                <div class="form-group mx-sm-3 mb-2">
+                    <form id="name-form">
+                        <input type="text" id="name-input" placeholder="Name">
+                        <br></br>
+                        <form action="radioOption" id="gameOption">
+                            <h5 class="text-center">Select which option to play </h5>
+                            <input type="radio" name="play" value="player2"> Oponent</input>
+                            <br>
+                            <input type="radio" name="play" value="computer"> Computer</input>
+                        </form>
+                        <br></br>
+                        <input id="add-name" type="submit" value="Submit"></input>
+                    </form>
                 </div>
-                <div class="col-md-9">
-                    <img src="assets/images/Hangman-image.PNG" class="titleImage" alt="Hangman Title Image" />
+        </form>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-2" id="playerPanel1">
+                    <h5 class="card-header text-center">Player</h5>
+                    <div class="panel-body panelOption text-center">
+                        <h3 class="panel-title text-center" id="player1Status"></h3>
+                    </div>
+                    <div class="panel-body panelOption text-center">
+                        <h3 class="panel-title text-center" id="player1Name"></h3>
+                    </div>
+                    <div class="panel-body panelOption text-center">
+                        <div class="optionRock1" id="optionRock1">Rock</div>
+                    </div>
+                    <div class="panel-body panelOption text-center">
+                        <div class="option" id="optionPaper1">Paper</div>
+                    </div>
+                    <div class="panel-body panelOption text-center">
+                        <div class="option" id="optionScissors1">Scissors</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-2">
+                    <h5 class="card-header text-center">Message Panel</h5>
+                    <div class="card-body text-center" id="msgPanel">
+                        <h3 class="">
+                            <strong>Hi :</strong>
+                            <span id="currentPlayerName"></span>
+                        </h3>
+                        <h3 class="">
+                            <span id="gameStatusDisplay"></span>
+                        </h3>
+                        <hr>
+                        <h3 class="">Hurry!
+                            <strong>
+                                <span id="connected-viewers"></span>
+                            </strong> people have their eyes on the prize.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-2">
+                            <h5 class="card-header text-center">Player Score</h5>
+                            <div class="card-body text-center" id="boxWins">
+                                <h2>
+                                    <div id="playerStatusWins"></div>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-2">
+                            <h5 class="card-header text-center">Oponent Score</h5>
+                            <div class="card-body text-center" id="boxLoss">
+                                <h2>
+                                    <span id="numberofLosses"></span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-2">
+                    <h5 class="card-header text-center">Oponent/Computer</h5>
+                    <div class="panel-body panelOption text-center">
+                        <h3 class="panel-title text-center" id="player2Status"></h3>
+                    </div>
+                    <div class="panel-body panelOption text-center">
+                        <h3 class="panel-title text-center" id="player2Name"></h3>
+                    </div>
+                    <div class="panel-body panelOption text-center">
+                        <div class="option" id="optionRock2">Rock</div>
+                    </div>
+                    <div class="panel-body panelOption text-center">
+                        <div class="option" id="optionPaper2">Paper</div>
+                    </div>
+                    <div class="panel-body panelOption text-center">
+                        <div class="option" id="optionScissors2">Scissors</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--End of header section>-->
-        <div class="firstBody">
-            <!--Start of body section>-->
-            <div class="row">
-                <!-- First of two columns -->
-                <div class="col-md-12">
-                    <h2>You just typed:
-                        <span id="user-text">
-                            <strong>...Nothing.</strong>
-                        </span>
-                    </h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-2">
+                    <h5 class="card-header text-center">Chat</h5>
+                    <div class="chatInput">
+                        <div class="chatLabel">Type Your Message!</div>
+
+                        <div class="chatPanel">
+                            <form id="chat-form">
+                                <textarea type="text" id="chat-input"></textarea>
+                                <input id="chat-send" type="submit" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="card-body text-center">
+                        <img src="assets/images/blueDimend.jpg" class="crystalImg" id="crstlBlue" alt="Blue crystal" width="150" height="150" />
+                        <img src="assets/images/crystalBlueBall.jpg" class="crystalImg" id="crstlYellow" alt="Yellow crystal" width="150" height="150"
+                        />
+                        <img src="assets/images/greenCrystal.jpg" class="crystalImg" id="crstlBlueDark" alt="Blue-dark crystal" width="150" height="150"
+                        />
+                        <img src="assets/images/crystal-ice-explosion.jpg" class="crystalImg" id="crstlRocks" alt="Rocks crystal" width="150" height="150"
+                        />
+                    </div> -->
                 </div>
             </div>
         </div>
-        <div class="second-body">
-            <!--Start of body section>-->
-            <div class="row">
-                <!-- Second of two columns -->
-                <div class="col-md-4 image-controlColum">
-                    <!--<img id="cowBoyImage" src="assets/images/cowboyBank.png" width="400" height="350">-->
-                    <img id="hangmanImage" src="assets/images/cowboyBank.png" width="550" height="400" />
-                    <img id="youwinImage" src="assets/images/you-win.jpg" width="550" height="400" />
-                    <img id="gameoverImage" src="assets/images/gameover.png" width="550" height="400" />
-                    <h2 id="pressKeyTryAgain">Press Any Key to Try Again!</h2>
-                    <img id="   " src="" alt="" />
-                </div>
-                <div class="col-md-8 game-controlColum">
-                    <h2>PRESS ANY KEY TO GET STARTED</h2>
-                    <h4>WINS</h4>
-                    <h5 id="totalWins"></h5>
-                    <h4>CURRENT WORD</h4>
-                    <h3 id="currentWord"></h3>
-                    <h4>NUMBER OF GUEESSES REMAINING</h4>
-                    <h6 id="guessesRemain"></h6>
-                    <h4>LETTERS ALREADY GUESSED</h4>
-                    <h3 id="lettersGuessed"></h3>
-                </div>
-            </div>
         </div>
     </div>
-    <script>
-        gameReset();
-        updateDisplay();
-    </script>
-
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>

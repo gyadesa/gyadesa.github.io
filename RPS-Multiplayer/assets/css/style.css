@@ -1,0 +1,69 @@
+/* general */
+* {
+    box-sizing: border-box;
+  }
+  /* body {
+      background-image: url("../images/blueBackGround.jpg");
+  } */
+  .jumbotron {
+    background-color: #1fb3e0;
+    padding: 3.0em 0.5em;
+    margin: 0.0em 0.0em 1.5em 0.0em;
+    width: 100%;
+  }
+
+  #name-input {
+    width: 200px;
+    height: 30px;
+    color: #b4c7df;
+    text-align: center;
+    margin-left: 33%;
+    border-radius: 10px;
+    background-color: #cdd9ea;
+  }
+
+#gameOption {
+  align-items: center;
+  justify-content: center;
+}
+
+  
+  /* #name-input:focus {
+    color: #084596;
+    background-color: white;
+  }
+  
+  #add-name {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 5px 45px;
+    border-radius: 10px;
+    color: #084596;
+    font-weight: normal;
+  }
+  #boxInstra {
+       font-size: 14px;
+       background-color: burlywood;
+  }
+  #boxComputer {
+    padding: 20px;
+    background-color: rgb(177, 190, 177);
+    color: blue;
+  }
+  #boxWins {
+    padding: 33px;
+    background-color: darkturquoise;
+    color: blue;
+  }
+  #boxScore {
+    padding: 33px;
+    background-color:rgb(27, 131, 126);
+  }
+  #boxLoss {
+    padding: 33px;
+    background-color:darkturquoise;
+    color: blue;
+  } */
+ 
+  
