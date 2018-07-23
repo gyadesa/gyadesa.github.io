@@ -1,47 +1,213 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<div class=”ghost”></div>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>About | Gamachis</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>Gamachis/Portfolio</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Latest compiled and minified CSS (Bootstrap) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Gamachis Yadesa</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-1">
+                <!-- As a heading -->
+                <img src="assets/images/bio-image.jpg" class="bioImage" alt="bio Header Image" />
+            </div>
+            <div class="col-md-11">
+                <img src="assets/images/banner-982162__340.jpg" class="mySlides" alt="banner">
+            </div>
+        </div>
     </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
-
-      <img src="assets/images/bio-image.jpg" class="auth-image" alt="Gamachis Yadesa">
-
-      <p>I’m experienced Software Automation and result-oriented Software Test Engineer with 8 years of work in a breadth of programs and technologies in medical device industry. As a life-long seeker of knowledge, I’m currently set my sights on a part-time intensive 24-week long coding boot camp that is dedicated to designing and building web applications at University Of Minnesota.</p>
-
-      <p>The focuses of the course include HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular JS, Firebase, Ionic Mobile Framework, Node Js, MySQL, MongoDB, Express, & Handlebars JS. Additionally, knowledge of real time projects development is involved.</p>
-
-      <p>I specialize in creating beautiful, usable, professional websites using best practice accessibility and the latest W3C web standard guidelines, resulting in semantic and friendly HTML5 and CSS3. All my sites are lovingly hand coded.</p>
-
-    </section>
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
+    <div class="row">
+        <div class="col-md-12" id="box2">
+            <div class="card mb-2">
+                <h3 class="card-header text-center">My Portfolio</h3>
+                <!-- <div class="card-body text-center" id="boxResult">
+                    <h1 id="timeBox"></h1>
+                </div> -->
+            </div>
+            <div class="sidenav">
+                <a href="index.html">About</a>
+                <a href="#projects">Projects</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
     </div>
-  </footer>
+
+    <!-- <div class="container"> -->
+    <div class="row" id="headProject">
+        <div class="col-md-1">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">Contact</h5>
+                <div class="card-body text-left" id="boxMenu">
+                    <div class="icon-bar" id="socialBox">
+                        <h2>
+                            <a target="_blank" href="https://www.linkedin.com/in/gamachis-yadesa" class="linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a target="_blank" href=https://github.com/gyadesa/ class="github">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/gyadesa" class="facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/gyadesa" class="twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="google">
+                                <i class="fa fa-google"></i>
+                            </a>
+                            <a href="#" class="youtube">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7" id="box2">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">About Me</h5>
+                <div class="card-body text-left" id="boxAbout">
+                    <p>
+                        I’m a Full Stack Developer with a background in Software Test Engineering across a breadth of programs and technologies in
+                        the medical device industry. I am driven by the complexity of a world that generates and consumes
+                        vast amounts of data as well as the tools we use to automate software. With that being said, web
+                        development fuels my passion for creativity through problem solving. I am fascinated by what programming
+                        can accomplish from anywhere in the world. For the past 6 months, I participated in an intensive
+                        coding Boot Camp dedicated to designing and building web applications at the University of Minnesota.
+                        <br>
+                        <br> I gained skills in HTML5, CSS3, JavaScript, jQuery, bootstrap, AngularJS, Firebase, Ionic Mobile
+                        Framework, Node JS, MySQL, mongoDB, Express, and handlebars JS. I’m ready to put my knowledge gained
+                        from real time project development into creating automated web applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" id="box3">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">Sample Video</h5>
+                <div style="text-align:center">
+                    <button onclick="playPause()">Play/Pause</button>
+                    <button onclick="makeBig()">Big</button>
+                    <button onclick="makeSmall()">Small</button>
+                    <button onclick="makeNormal()">Normal</button>
+                    <br>
+                    <video id="video1" width="420">
+                        <source src="assets/video/gamme-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="headProject">
+        <div class="col-md-12">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">Projects</h5>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" id="myProject">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">JavaScript Assignment: Word Guess Game</h5>
+                <a target="_blank" href="https://gyadesa.github.io/wordGuessGame/index.html">
+                    <img src="assets/images/hangMan-project.jpg" alt="Hangman" style="width:90%">
+                </a>
+                <h5>A computer word guess game that will run an app in a browser featuring dynamically updated HTML and CSS that
+                    uses a javascript that listens to a key events that a player types.
+                </h5>
+            </div>
+        </div>
+        <div class="col-md-4" id="myProject">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">jQuery Assignment: Crystals Collector Game</h5>
+                <a target="_blank" href="https://gyadesa.github.io/unit-4-game/index.html">
+                    <img src="assets/images/crystalsCollectorGame-Project.jpg" alt="CrystalsCollector" style="width:90%">
+                </a>
+                <h5>A computer game that will run an app that dynamically updates HTML page with the jQuery library with 4 crystal
+                    displayed, it will add a specific amount of random points to the player's total scoreas when the crystals
+                    are clicked.
+                </h5>
+            </div>
+        </div>
+        <div class="col-md-4" id="myProject">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">JavaScript Assignment: Trivia Game</h5>
+                <a target="_blank" href="https://gyadesa.github.io/TriviaGame">
+                    <img src="assets/images/TriviaGame-project.jpg" alt="TriviaGame" style="width:90%">
+                </a>
+                <h5>A Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Player will have a limited amount
+                    of time to finish the quiz. Game ends when the time runs out and the page will reveal the number of questions
+                    that players answer correctly and incorrectly.
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" id="myProject">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">ajax: Giphy API</h5>
+                <a target="_blank" href="https://gyadesa.github.io/giftastic/giftastic.html">
+                    <img src="assets/images/giftastic-project.jpg" alt="Giphy API" style="width:90%">
+                </a>
+                <br>
+                <h5> A full stack GIPHY API that calls JavaScript and jQuery to make a dynamic web page that populates with gifs
+                    of the top 10 soccer players of the world.
+                </h5>
+            </div>
+        </div>
+        <div class="col-md-4" id="myProject">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">Firebase: Global Sounds</h5>
+                <a target="_blank" href="globalSounds-project.jpg">
+                    <img src="assets/images/globalSounds-project.jpg" alt="Global Sounds" style="width:90%">
+                </a>
+                <h5>This project</h5>
+            </div>
+        </div>
+        <div class="col-md-4" id="myProject">
+            <div class="card mb-2">
+                <h5 class="card-header text-center">Title3</h5>
+                <a target="_blank" href="TriviaGame-project.jpg">
+                    <img src="assets/images/crystalsCollectorGame-Project.jpg" alt="Trivia Game" style="width:90%">
+                </a>
+                <h5>This project</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" id="box5">
+            <div class="card mb-2">
+                <button type="button" class="btnstart">Display</button>
+                <div class="card-body text-center">
+                    <h2>
+                        <button type="button" class="btn btn-primary">Start</button>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+
 </body>
 
 </html>
