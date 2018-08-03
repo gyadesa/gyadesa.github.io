@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title style=text-align:center>Global Sounds</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+   
+    <link rel="icon" href="assets/images/favicon.ico" type="favicon.png" size="16x16">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+</head>
+
+<body>
+    <!-- Top container -->
+    <div class="w3-bar w3-top w3-white w3-large" style="z-index:4">
+        <button id="defaultOpen" class="tablink" onclick="openPage('Home', this, '#005e52')">Home</button>
+        <button id="btn_ArtistInfo" class="tablink" onclick="openPage('ArtistInfo', this, '#005e52')">Artist Description</button>
+        
+    </div>
+
+<!-- home page -->
+    <div id="Home" class="tabcontent">
+        <!-- search section -->
+        <div class="row " style="margin:20px; padding:0;">
+            <div class="w3-main col-md-12" style="margin-left:0px;">
+                <img id= "logo" src="assets/images/LogoMakr_1IER4Q.png" alt="logo">
+                <h1>Search for a Country or Select in Map</h1>
+                <form id="search-form">
+                    <input type="text" id="query" value="" class="form-control" placeholder="Type a Country Name" required="true" style="width:50%"
+                    />
+                    <input type="submit" id="search" class="btn btn-light btn-lg" value="Search" style="margin-left:0px;margin-top:20px;color:white"
+                    />
+                </form>
+            </div>
+
+            <div class="col-md-02">
+            </div>
+        </div>
+
+        <!-- map section -->
+        <div class="row" style="margin:0; padding:0;">
+
+            <div class="col-sm-10" style="margin-left:0px;margin-top:0px">
+                <div class="col-sm-1 col-md-1 col-lg-2">
+                </div>
+                <div id="map" style="width:100%">
+                </div>
+            </div>
+
+            <div class="col-sm-2" style="margin-left:0px;margin-top:0px;" id="results"></div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Artist page -->
+    
+    <div id="ArtistInfo" class="tabcontent">
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron" id="heading">
+                        <h1 class="text-center">Artist Info</h1>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3" style="margin-left:0px;margin-top:0px">
+                    <div id="bio">
+                    </div>
+                    <h3 class="space">Tags: </h3>
+                    <div id="tags">
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-sm-7 col-md-7 col-lg-07" style="margin-left:0px;margin-top:0px">
+                    <h3>Youtube Videos: </h3>
+                    <div id="video-results">
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-02" style="margin:0; padding:0;">
+                    <h3 class="space">Similar: </h3>
+                    <div id="suggestions">
+
+                    </div>
+
+
+                </div>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+    <div class="footer">
+        <span>Contact Team ToneDeaf:</spa>
+        <a href="https://www.facebook.com/tashi.wangmo.9" target="_blank" class="fa fa-facebook"></a>
+        <a href="www.linkedin.com/in/tashi-wangmo-4b1831a7" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/tawangla/?hl=en" target="_blank" class="fa fa-instagram"></a>
+        <br>
+    </div>
+
+
+    <script type="text/javascript" src="assets/javascripts/script.js"></script>
+    <script type="text/javascript" src="assets/javascripts/countryData.js"></script>
+    <script type="text/javascript" src="assets/javascripts/javascriptmap.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfHquEEPHJDwuOWeK3pgkCpWAk2Q40p9E&callback=initMap"></script>
+    </div>
+</body>
+
+</html>

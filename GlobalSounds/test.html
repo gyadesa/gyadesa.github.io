@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Global Sounds</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Karma", sans-serif
+        }
+        #logo{
+        width:200px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div class="w3-bar w3-top w3-white w3-large" style="z-index:4">
+        <button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen">Search for Artists</button>
+        <button id="btn_ArtistInfo" class="tablink" onclick="openPage('ArtistInfo', this, 'blue')">Artist Description</button>
+        <span class=" w3-right">
+            <img id="logo" src="assets/images/LogoMakr_7Hv1Dh.png" alt="logo">
+        </span>
+    </div> -->
+
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px"
+        id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+        <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Search for Artists</a>
+        <a href="#about" onclick="w3_close()" "openPage('ArtistInfo', this, 'blue')" class="w3-bar-item w3-button">Artist Description</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()" style="width: 100px">☰</div>
+            <div class="w3-center w3-padding-16"><img id="logo" src="assets/images/LogoMakr_7Hv1Dh.png" alt="logo"></div>
+            
+        </div>
+    </div>
+</body>
+<script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+         
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
+</html>
+
+<!-- Logo made with Logomakr.com -->
