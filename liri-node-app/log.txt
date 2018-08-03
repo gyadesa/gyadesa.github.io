@@ -1,0 +1,71 @@
+  INFO  ======================= 
+  INFO  We had to make something extra special for Billy's 100th show at @TheGarden this week so we only made 100 of these… https://t.co/wcBiW1U6qV 
+  INFO  Mon Jul 16 19:48:41 +0000 2018 
+  INFO  ======================= 
+  INFO  RT @TheGarden: December 14, 1978. #BillyJoelMSG100 https://t.co/LkYeSX4w0z 
+  INFO  Mon Jul 16 18:23:13 +0000 2018 
+  INFO  ======================= 
+  INFO  Multi-instrumentalist and vocalist Crystal Taliefero [@cryskode] has been an integral part of Billy Joel's live ban… https://t.co/R1kCt9OF9H 
+  INFO  Mon Jul 16 14:23:36 +0000 2018 
+  INFO  ======================= 
+  INFO  "I’m an unlikely candidate for a rock star. I don’t look like a rock star. I’m like the eternal under-dog. In my ly… https://t.co/gtFecBFoTI 
+  INFO  Sun Jul 15 22:00:35 +0000 2018 
+  INFO  ======================= 
+  INFO  RT @TheGarden: Enter for a chance to win 2 tix to @BillyJoel's 100th lifetime perf @ MSG! No purch nec. Open to legal residents of 50 US &amp;… 
+  INFO  Fri Jul 13 15:33:24 +0000 2018 
+  INFO  ======================= 
+  INFO  100 shows…thousands of memories! Here’s one last look at #BillyJoelMSG100 by the numbers – what are your favorite s… https://t.co/iwKTnHXj64 
+  INFO  Fri Jul 13 14:11:45 +0000 2018 
+  INFO  ======================= 
+  INFO  After 40 years of rocking out at @TheGarden, Billy Joel releases Limited Edition Anniversary Jacket. Premium Denim.… https://t.co/sUnMf44X6k 
+  INFO  Thu Jul 12 16:27:30 +0000 2018 
+  INFO  ======================= 
+  INFO  #AboutLastNight 📷: @ClaireMercuri https://t.co/Pr2b0bKAK4 
+  INFO  Sun Jul 01 20:33:04 +0000 2018 
+  INFO  ======================= 
+  INFO  Billy Joel takes the stage in Hamburg, with Noel Rush (security), driving! 
+
+📷: @ClaireMercuri https://t.co/VTzvJlBMQW 
+  INFO  Sun Jul 01 02:25:08 +0000 2018 
+  INFO  ======================= 
+  INFO  Amazing to hear that 55 years after its recording, jazz legend @JohnColtrane has a new album. #BothDirectionsAtOnce https://t.co/5CJunrsjNf 
+  INFO  Fri Jun 29 13:17:54 +0000 2018 
+  INFO  ======================= 
+  INFO  Last night’s set list! 📷: @ClaireMercuri https://t.co/KjW7nCcfHS 
+  INFO  Sun Jun 24 20:05:55 +0000 2018 
+  INFO  ======================= 
+  INFO  The Billy Joel tribute band Big Shot (led by Billy’s guitarist Mike DelGuidice) has been thrilling audiences on Lon… https://t.co/DlypOiLiLV 
+  INFO  Sun Jun 24 14:01:10 +0000 2018 
+  INFO  ======================= 
+  INFO  Whistling right before you get to work.    
+At @AVIVAStadium, Dublin, Ireland. #AboutLastNight 📷: @ClaireMercuri https://t.co/R8UAfzcOK4 
+  INFO  Sun Jun 24 12:06:44 +0000 2018 
+  INFO  ======================= 
+  INFO  Billy Joel walks to the stage at @AVIVAStadium in Dublin, Ireland. 📷: @ClaireMercuri https://t.co/VvK2VAi7LY 
+  INFO  Sat Jun 23 21:40:22 +0000 2018 
+  INFO  ======================= 
+  INFO  Billy Joel kicked off a two-night stand at New York’s Yankee Stadium on this day in 1990! The show was recorded and… https://t.co/t9PwwYZndV 
+  INFO  Fri Jun 22 14:01:56 +0000 2018 
+  INFO  ======================= 
+  INFO  #AboutLastNight #Manchester #OldTrafford https://t.co/ZXrwxhfzq7 
+  INFO  Sun Jun 17 12:59:48 +0000 2018 
+  INFO  ======================= 
+  INFO  #BillyJoelMSG100 is almost a month away! What was it like to be a fan when Billy first took the stage at @TheGarden… https://t.co/aBeFyHMTB6 
+  INFO  Fri Jun 15 14:24:02 +0000 2018 
+  INFO  ======================= 
+  INFO  On this day in 2001, Billy was honored by the Songwriter’s Hall of Fame with the prestigious Johnny Mercer Award. H… https://t.co/zt9qzjfyza 
+  INFO  Thu Jun 14 20:01:17 +0000 2018 
+  INFO  ======================= 
+  INFO  Billy shattered the @billboard 200 on this day in 1980, earning his second chart-topping LP with ‘Glass Houses.’ https://t.co/NnKSEqWsPR 
+  INFO  Thu Jun 14 14:01:50 +0000 2018 
+  INFO  Error occurred: StatusCodeError: 400 - {"error":"invalid_client","error_description":"Invalid client"} 
+  INFO  Error occurred: StatusCodeError: 400 - {"error":"invalid_client","error_description":"Invalid client"} 
+  INFO  Title of the movie: The Lion King 
+  INFO  Year the movie came out: 1994 
+  INFO  IMDB Rating of the movie: 8.5 
+  INFO  Rotten Tomatoes Rating of the movie: 83/100 
+  INFO  Country where the movie was produced: USA 
+  INFO  Language of the movie: English, Swahili, Xhosa, Zulu 
+  INFO  Plot of the movie: A Lion cub crown prince is tricked by a treacherous uncle into thinking he caused his father's death and flees into exile in despair, only to learn in adulthood his identity and his responsibilities. 
+  INFO  Actors in the movie: Rowan Atkinson, Matthew Broderick, Niketa Calame-Harris, Jim Cummings 
+  INFO  Error occurred: StatusCodeError: 400 - {"error":"invalid_client","error_description":"Invalid client"} 
