@@ -1,0 +1,16 @@
+{
+  "name": "sqlgamme",
+  "version": "1.0.0",
+  "description": "for homework use",
+  "main": "apiRoutes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Gamme Yadesa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  }
+}
