@@ -1,0 +1,41 @@
+<div class="container fill main-container ">
+    <ul class="nav nav-tabs">
+        <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="active"><a href="/comments"><span class="glyphicon glyphicon-comment"></span> All comments</a></li>
+        <li><a href="/scrape"><span class="glyphicon glyphicon-refresh"></span> Scrape</a></li>
+    </ul>
+    <div class="tab-content user-section">
+        <div class="row">
+            <p class="text-center user-title"> Comments by users</p>
+            <div class="col-md-10 col-md-offset-1">
+                {{#if user}}
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th width="25%">Article</th>
+                            <th width="60%">Comment</th>
+                            <th width="15%">Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each user}}
+                        <tr>
+                            {{#each this.news}}
+                            <td>
+                                <a href="{{this.link}}" target="popup" onclick="window.open('{{this.link}}','popup','width=600,height=600'); return false;">
+                                    {{this.title}} </a>
+                            </td>
+                            {{/each}}
+                            <td> {{this.message}} </td>
+                            <td> {{this.username}} </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                {{else}}
+                <p class="text-center">No comments yet !!!</p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>

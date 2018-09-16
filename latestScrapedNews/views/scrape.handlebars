@@ -1,0 +1,91 @@
+<div class="container main-container">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="/comments"><span class="glyphicon glyphicon-comment"></span> All comments</a></li>
+        <li><a href="/scrape"><span class="glyphicon glyphicon-refresh"></span> Scrape</a></li>
+    </ul>
+    <div class="tab-content article-section">
+        <div class="row">
+            <p class="text-center article-title"> News & Articles </p>
+            <span class="text-center comment-messages"> {{commentMessage}}</span><br> 
+            {{#each data}}
+                <div class="col-md-6">
+                    <div class="news-display">
+                        <div class="news-title"> {{this.title}} </div>
+                        <div class="news-body clearfix">
+                            <div class="pull-left news-image">
+                                <img class="img-thumbnail" src="{{this.image}}" alt="BBC image">
+                            </div>
+                            <div class="news-summary text-center">
+                                {{#if this.summary}}
+                                    <p class="news-snippet">{{this.summary}}</p>
+                                    <hr> 
+                                {{else}}
+                                    <br><br> 
+                                {{/if}}
+                                <i>Full news 
+                                    <a href="{{this.link}}" target="_blank">Go to the website</a> <br>OR 
+                                    <a href="{{this.link}}" target="popup"  onclick="window.open('{{this.link}}','popup','width=600,height=600'); return false;">Open in a popup window</a>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header news-comment">
+                                <span class="glyphicon glyphicon-plus-sign"></span> Add comment
+                            </div>
+                            <div class="collapsible-body">
+                                <form id="form-add-{{this._id}}" action="add/comment/{{this._id}}" method="post">
+                                    <div class="row">
+                                        <div class="input-field col s8 offset-s2">
+                                            <input id="user-name" name="userName" type="text" class="validate" required>
+                                            <label for="user-name">Your Name:</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s8 offset-s2">
+                                            <textarea id="comment-box" name="userComment" class="materialize-textarea" required></textarea>
+                                            <label for="comment-box">Comment:</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s8 offset-s2">
+                                            <center><input class="btn" data-id="{{this._id}}" type="submit" value="Submit"></center>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header news-comment">
+                                <span class="glyphicon glyphicon-eye-open"></span> Show comments
+                            </div>
+                            <div class="collapsible-body">
+                                {{#if this.comments}}
+                                    <ul class="collection">
+                                        {{#each this.comments}}
+                                            <li class="collection-item">
+                                                <b>{{this.username}}</b>
+                                                <div class="row">
+                                                    <div class="col-md-10">{{this.message}}</div>
+                                                    <div class="col-md-2">
+                                                        <form id="form-delete-{{this._id}}" action="delete/comment/{{this._id}}" method="post"> 
+                                                            <input class="btn btn-small delete-comment-button" data-id="{{this._id}}" type="submit" value="Delete">
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                {{else}}
+                                    <p>No comments yet !!!</p>
+                                {{/if}}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
