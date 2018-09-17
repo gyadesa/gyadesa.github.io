@@ -9,7 +9,7 @@ var mongoose = require("mongoose");
 var PORT = process.env.PORT || 3000;
 var app = express();
 
-process.env.NODE_ENV = 'production';
+process.env.MONGODB_URI = 'production';
 
 // Models
 var comments = require("./models/comments.js");
@@ -29,11 +29,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Database configuration with mongoose, errors, success
 mongoose.Promise = Promise;
-if (process.env.NODE_ENV === 'production') {
-    console.log('node env is', process.env.NODE_ENV);
-    mongoose.connect("mongodb://localhost/week18Populater");
+if (process.env.MONGODB_URI === 'production') {
+    console.log('node env is', process.env.MONGODB_URI);
+    mongoose.connect('mongodb://gyadesauser:mymongo85db@ds057862.mlab.com:57862/gygoogledb_scraper');
 } else {
-    console.log('node env is', process.env.NODE_ENV);
+    console.log('node env is', process.env.MONGODB_URI);
     mongoose.connect('mongodb://localhost/bbcnews-scraper');
 }
 var db = mongoose.connection;
